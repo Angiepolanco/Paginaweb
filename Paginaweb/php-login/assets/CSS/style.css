@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  display: none; /* Ocultar el header si no es necesario */
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #b11e1e; /* Cambio de color del título */
+}
+
+.login-container span {
+  display: block;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  outline: none;
+  padding: 15px;
+  width: calc(100% - 30px);
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  padding: 15px;
+  color: #fff;
+  background: #b11e1e; /* Cambio de color del botón */
+  width: calc(100% - 30px);
+  margin: 20px 0;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #8c0a0a; /* Cambio de tono del color de fondo del botón al pasar el cursor */
+}
+
+.login-container a {
+  color: #ffcc00; /* Amarillo institucional */
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* Estilo para el mensaje de error */
+.message {
+  color: #b11e1e; /* Cambio de color del mensaje de error */
+  margin: 20px 0;
+}
+
+/* Estilos adicionales para la disposición general */
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.left-content {
+  max-width: 50%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-content h1 {
+  font-size: 36px;
+  color: #b11e1e; /* Cambio de color del título */
+  background-image: url('imagenes/logo.jpeg'); /* Cambio de texto por imagen de logo */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.left-content p {
+  font-size: 18px;
+  color: #333;
+}
+
+.right-content {
+  max-width: 50%;
+  padding: 20px;
+}
+
+.slider-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Nuevo estilo para la imagen */
+.left-content img {
+  max-width: 100%;
+  max-height: 400px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}

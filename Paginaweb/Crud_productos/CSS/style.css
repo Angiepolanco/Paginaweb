@@ -1,0 +1,252 @@
+/* Estilos globales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+body {
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button, input[type=submit] {
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilos para la cabecera */
+header {
+    background-color: #b11e1e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+header button {
+    background-color: white;
+    color: #b11e1e;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header button:hover {
+    background-color: #b11e1e;
+    color: white;
+}
+
+/* Estilos para la tabla de pedidos */
+.pedidos-table {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+.pedidos-table table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+
+.pedidos-table table th,
+.pedidos-table table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+    white-space: nowrap; /* Para que no se corte el contenido */
+}
+
+.pedidos-table table th {
+    background-color: #b11e1e;
+    color: white;
+    text-transform: uppercase;
+}
+
+.pedidos-table table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.pedidos-table table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.pedidos-table table td {
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+.pedidos-table table td:hover {
+    background-color: #f5f5f5;
+}
+
+/* Estilos para el botón de descarga */
+.btn-small {
+    background-color: #b11e1e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-small:hover {
+    background-color: #ff4444;
+    color: white;
+}
+
+/* Estilos adicionales para formularios y tablas de productos (opcional) */
+.productos-form {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.productos-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+}
+
+.productos-form form h1 {
+    color: #b11e1e;
+}
+
+.productos-form form input[type=text],
+.productos-form form input[type=file] {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.productos-form form input[type=text]:focus,
+.productos-form form input[type=file]:focus {
+    border-color: #b11e1e;
+}
+
+.productos-form form input[type=submit] {
+    background-color: #b11e1e;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+.productos-form form input[type=submit]:hover {
+    background-color: #f5f30e;
+    color: black;
+}
+
+.productos-table {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.productos-table h2 {
+    color: #b11e1e;
+    margin-bottom: 20px;
+}
+
+.productos-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.productos-table table th,
+.productos-table table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.productos-table table th {
+    background-color: #ffffff;
+    color: black;
+}
+
+.productos-table table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.productos-table--edit {
+    background-color: #f5f30e;
+    color: black;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.productos-table--edit:hover {
+    background-color: #ffc107;
+    color: white;
+}
+
+.productos-table--delete {
+    background-color: #b11e1e;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.productos-table--delete:hover {
+    background-color: #ff4444;
+    color: white;
+}
+
+img {
+    max-width: 100px;
+    border-radius: 10px;
+}
+
+.custom-alert {
+    background-color: #f5f30e;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    text-align: center;
+}

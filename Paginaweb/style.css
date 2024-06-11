@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #ffffff; /* Fondo blanco */
+    color: #b11e1e; /* Color de texto rojo */
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #b11e1e 3px solid; /* Borde rojo */
+    position: relative;
+}
+
+
+header a {
+    color: #b11e1e;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu img.logo-1 {
+    width: 150px;
+}
+
+header .menu label img {
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navbar ul li a .icon {
+    width: 30px; /* Ajusta el tamaño del icono según sea necesario */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease; /* Añadir una transición para el hover */
+}
+
+header .navbar ul li a:hover .icon {
+    transform: scale(1.1); /* Agrandar el icono al pasar el mouse */
+}
+
+
+header .menu-1,
+header .menu-2 {
+    display: flex;
+    align-items: center;
+}
+
+header .menu-1 ul,
+header .menu-2 ul {
+    display: flex;
+}
+
+header .menu-1 ul li,
+header .menu-2 ul li {
+    margin-right: 20px;
+}
+
+header .socials {
+    display: flex;
+    align-items: center;
+}
+
+header .socials .social {
+    width: 30px;
+    margin-left: 10px;
+}
+
+header .header-content {
+    padding: 20px 0;
+}
+
+header .header-content .swiper-slide .slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header-content .slider-txt {
+    max-width: 50%;
+}
+
+header .header-content .slider-txt h1 {
+    font-size: 60px; /* Aumento de tamaño del título */
+    margin-bottom: 10px;
+    text-align: center; /* Centrar el título */
+}
+
+header .header-content .slider-txt p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+header .header-content .slider-img img {
+    width: 400px; /* Ajustar el tamaño de las imágenes */
+}
+
+/* Products */
+.products {
+    background: #fff;
+    padding: 20px 0;
+}
+
+.products .tabs {
+    display: flex;
+    flex-direction: column;
+}
+
+.products .tabs input[type="radio"] {
+    display: none;
+}
+
+.products .tabs label {
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    background: #f4f4f4;
+    border-bottom: 1px solid #ffffff;
+}
+
+.products .tabs .tab {
+    display: none;
+    padding: 20px;
+}
+
+.products .tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+
+.products .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products .product {
+    background: #fff;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    text-align: center;
+    width: 300px; /* Cambia el ancho fijo a uno flexible */
+    margin: 10px;
+}
+
+.products .product-img img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: auto;
+    max-height: 200px; /* Limita la altura máxima de la imagen */
+}
+
+
+.products .product-txt h4 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.products .product-txt p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.products .price {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Info */
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.info .info-img img {
+    max-width: 200%; /* Ajustar el tamaño máximo */
+    height: auto; /* Mantener la proporción */
+    max-height: 800px; /* Ajusta la altura máxima deseada */
+}
+
+
+.info .info-txt {
+    max-width: 50%;
+    padding: 20px;
+}
+
+.info .info-txt h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.info .info-txt p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/* Horario */
+.horario {
+    background: #ffffff;
+    padding: 20px 0;
+}
+
+.horario .horario-info {
+    text-align: center;
+}
+
+.horario .horario-txt {
+    display: flex;
+    justify-content: space-between
+    ;
+}
+
+.horario .txt {
+    width: 30%;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ffff;
+    margin: 10px;
+}
+
+.horario .txt h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.horario .txt p {
+    font-size: 18px;
+}
+
+/* Footer */
+.footer {
+    background: #b11e1e; /* Cambio de color de fondo */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer img.logo-2 {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.PieDePagina h4 {
+    font-size: 30px; /* Aumento de tamaño del título */
+    text-align: center; /* Centrar el título */
+}
+
+/* Para aplicar un color de fondo diferente a los botones */
+.botones button.btn-1 {
+    background-color: #b11e1e; /* Cambiar el color de fondo */
+    color: #fff; /* Cambiar el color del texto */
+    border: none; /* Eliminar el borde */
+    padding: 10px 20px; /* Ajustar el espaciado interno */
+    border-radius: 5px; /* Agregar esquinas redondeadas */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Agregar transición al cambio de color */
+}
+
+/* Cambiar el color de fondo al pasar el mouse por encima */
+.botones button.btn-1:hover {
+    background-color: #E63946;
+}
